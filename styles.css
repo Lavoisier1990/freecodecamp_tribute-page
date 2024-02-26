@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #f2f2f2;
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  header {
+    height: 85px;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ff9900;
+    z-index: 5;
+    margin-bottom: 100px;
+  }
+
+  div#nav-list {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav#nav-bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 85px;
+    width: fit-content;
+    text-align: center;
+  }
+
+  a.nav-link {
+    font-weight: bold;
+    color: white;
+    height: 85px;
+    max-width: 130px;
+    padding: 15px 10px;
+    text-decoration: none;
+    background-color: black;
+  }
+
+  a.nav-link:hover {
+    background-color: #f2f2f2;
+    color: black;
+  }
+
+  a.nav-link:active {
+    background-color: #f2f2f2;
+    color: black;
+    letter-spacing: 1.5px;
+  }
+
+  #title-block {
+    width: fit-content;
+    height: 85px;
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+   #header-image {
+     width: 100%;
+     position: relative;
+     top: -50px;
+   }
+
+   p#sub-heading {
+    width: 30%;
+    position: absolute;
+    top: 12.5rem;
+    left: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 1300px) {
+    #title-block {
+      transform: translate(0, 85px);
+      width: 100%;
+      text-align: center;
+      background-color: #ff9900;
+    }
+
+    header{
+      background-color: #f2f2f2;
+
+    }
+
+    div#nav-list {
+      width: 1300px;
+    }
+
+    nav#nav-bar {
+      width: 100%;
+    }
+
+    a.nav-link {
+      min-width: 14.1vw;
+    }
+
+    #header-image {
+     transform: translate(0, 40px);
+    }
+
+  }
+
+  div#container {
+      margin: auto;
+      width: 75%;
+      position: relative;
+      top: 50px;
+  }
+
+  .introduction-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: -20px;
+  }
+
+  h3#headline {
+    padding-top: 10px;
+  }
+
+  #img-div {
+    width: 100%;
+  }
+
+  #image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+
+  }
+
+  #img-caption {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  a.sticky-list {
+    display: block;
+    line-height: 2;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    border-width: 1px 1px;
+    border-color: white;
+    border-style: solid;
+
+  }
+
+  #wrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    }
+
+  .vertical-container {
+    width: 15%;
+    flex:1;
+    min-width: 120px;
+  }
+
+  #vertical-navbar {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 15px 0 0 15px;
+    position: sticky;
+    top: -268px;
+  }
+
+  a.sticky-list:hover
+  {
+    border-width: 2px;
+    border-color: white;
+    background-color: white;
+    color: black;
+  }
+
+  #timeline-container {
+    width: 85%;
+    position: relative;
+    left: 20px;
+    margin-bottom: 60px;
+    border-bottom: grey solid 5px;
+  }
+
+  #nav-img {
+    width: 100%;
+  }
+
+  #contents-headline {
+    text-align: center;
+  }
+
+  h4.left {
+    display: block;
+    text-align: left;
+    padding: 10px;
+  }
+
+  #early-life, #berlin-behrens, #design-identity, #werkbund, #bauhaus, #chicago, #awards-final-years, #legacy {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: lightgray;
+    border-radius: 20px;
+    padding: 25px;
+    min-width: 470px;
+  }
+
+  .img-right {
+    width: 100%;
+  }
+
+  ul.left-align {
+    width: 35%;
+  }
+
+  li {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  #tribute-img1 {
+    width: 60%;
+    position: relative;
+    left: 20px;
+  }
+
+  figcaption {
+    font-size: 12px;
+  }
+
+  .img-right-caption {
+    text-align: right;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  h4.right {
+    display: block;
+    text-align: right;
+    padding: 10px;
+  }
+
+  h4.center {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  #tribute-img2 {
+    width: 60%;
+    position: relative;
+    right: 0px;
+  }
+
+  .img-left {
+    width: 100%;
+  }
+
+  .img-left-caption {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  ul.right-align {
+    width: 35%;
+    position: relative;
+    right: -30px;
+  }
+
+   #tribute-img3 {
+     width: 60%;
+     height: 50%;
+     position: relative;
+     left: 30px;
+  }
+
+   #villa-wolf1 {
+     width: 100%;
+     height: 50%;
+     position: relative;
+     left: 0px;
+     top: 0px;
+   }
+
+   #villa-wolf2 {
+     width: 100%;
+     position: relative;
+     left: 0px;
+     height: 50%;
+   }
+
+   #villa-wolf-caption {
+     width: 100%;
+     text-align: center;
+   }
+
+    #tribute-img4, #tribute-img5, #tribute-img6, #tribute-img7 {
+      width: 60%;
+    }
+
+  #tribute-img7 {
+    position: relative;
+    left: 20px;
+  }
+
+    #tugendhat-img {
+      width: 100%;
+      padding: 10px;
+    }
+
+    #tugendhat-caption {
+      width: 100%;
+      text-align: justify;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+
+    #sr-crown-hall-img, #farnsworth-house-img  {
+      width: 100%;
+      text-align: justify;
+    }
+
+  #farnsworth-caption, #legacy-caption {
+    width: 100%;
+      text-align: justify;
+      margin-top: 10px;
+  }
+
+  #legacy {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #legacy-wrapper {
+    width: 100%;
+
+  }
+
+  #seagram-img {
+    width: 42%;
+  }
+
+  #neue-nationalgalerie-img {
+    width: 57%;
+  }
+
+  #legacy-info {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  blockquote {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
